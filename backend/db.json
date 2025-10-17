@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "65a570de-01b1-4175-9d66-3e9351b4bff0",
+      "nomeCompleto": "YAN MENDES BOSCARIOL BERTOLINO",
+      "dataNascimento": "2004-05-13",
+      "cpf": "49009779858",
+      "genero": "Masculino",
+      "nacionalidade": "",
+      "naturalidade": "",
+      "telefone": "11975821363",
+      "email": "yanmbbertolino@gmail.com",
+      "password": "$2b$10$MtAddCotKoaORkGMEQYxzOmNNAos9XXufFj2QK4.ybiuTdP/eZMIy",
+      "foto": "http://localhost:3001/uploads/profilePhoto-1758917343078-464536197.jpg",
+      "ministerios": [],
+      "estadoCivil": "",
+      "profissao": "",
+      "renda": "",
+      "endereco": {
+        "rua": "",
+        "numero": "",
+        "complemento": "",
+        "bairro": "",
+        "cidade": "",
+        "estado": ""
+      }
+    }
+  ]
+}
