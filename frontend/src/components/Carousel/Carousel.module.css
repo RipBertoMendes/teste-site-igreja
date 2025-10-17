@@ -1,0 +1,113 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out; 
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative; 
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-white);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.carouselText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.carouselText p {
+  font-size: 1.2rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.leftArrow {
+  left: 1rem;
+  border-radius: 0 5px 5px 0;
+}
+
+.rightArrow {
+  right: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.dotsContainer {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--secondary-white);
+}
+
+@media (max-width: 768px) {
+  .carouselText h2 {
+    font-size: 1.8rem;
+  }
+  .carouselText p {
+    font-size: 1rem;
+  }
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+}

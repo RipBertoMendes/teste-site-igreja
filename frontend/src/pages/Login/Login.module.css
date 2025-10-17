@@ -1,0 +1,103 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--navbar-height, 60px) - var(--footer-height, 150px));
+  padding: 2rem 1rem;
+  background-color: var(--light-gray);
+}
+
+.formWrapper {
+  background-color: var(--secondary-white);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.title {
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.formGroup input, .formGroup select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: white;
+  font-family: inherit; 
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.2); 
+}
+
+.submitButton {
+  background-color: var(--primary-blue);
+  color: var(--secondary-white);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #34495e;
+}
+
+.toggleForm {
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.toggleForm span {
+  color: var(--primary-blue);
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggleForm span:hover {
+  text-decoration: underline;
+  color: #34495e;
+}
+
+
+.formGroup select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2334495e' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}

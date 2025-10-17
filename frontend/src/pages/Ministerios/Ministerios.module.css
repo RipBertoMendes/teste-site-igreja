@@ -1,0 +1,45 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.pageTitle {
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.ministryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.ministryCard {
+  background-color: var(--secondary-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.ministryCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.ministryCard h3 {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.ministryCard p {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
